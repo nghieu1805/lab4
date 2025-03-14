@@ -9,26 +9,29 @@ namespace lab4
 {
     internal class Task
     {
-        protected string description;
+        protected string Description;
 
-        public Task() { }
+        public Task()
         {
-        this.setDescription("Default task");
+            this.SetDescription("Default task");
         }
-        public Task(string description )
-            { this.description = description; }
+        public Task(string description)
+        {
+            this.SetDescription(description);
+        }
 
-    public string getDescription()
+        public string GetDescription()
         {
-            return description;
+            return Description;
         }
-    public void setDescription (string description)
+        public void SetDescription(string description)
         {
-            this.description = description;
-            {
-                Public 
-            }
+            this.Description = description;
+        }
+        public void DisplayTask()
+        {
+            Console.WriteLine(GetDescription());
+        }
 
-        }
     }
 }
